@@ -2,6 +2,10 @@
 
 A real-time multi-object tracking and spatial reasoning system for mobile robots operating in warehouse-like environments. The pipeline processes raw YOLO detections from a camera stream and produces stable object tracks, depth estimates, and event-level insights.
 
+## Demo
+
+[![Watch the demo](https://img.shields.io/badge/▶%20Watch-Demo%20Video-blue?style=for-the-badge&logo=googledrive)](https://drive.google.com/file/d/1o-fTgSENNxsisA5spfHNmja8TW3CjbuB/view?usp=sharing)
+
 ---
 
 ## Table of Contents
