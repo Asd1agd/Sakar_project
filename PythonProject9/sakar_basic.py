@@ -29,7 +29,8 @@ def draw_text_with_background(img, text, pos, font_scale=0.5,
 model = YOLO('best (3).pt')
 
 # Path to input video
-video_path = 'WhatsApp Video 2026-03-08 at 12.53.01 PM.mp4'
+# video_path = 'WhatsApp Video 2026-03-08 at 12.53.01 PM.mp4'
+video_path = 'simulated_video.mp4'
 # video_path = 'WhatsApp Video 2026-03-08 at 5.43.19 PM.mp4'
 cap = cv2.VideoCapture(video_path)
 
@@ -100,7 +101,7 @@ while cap.isOpened():
     # Create a masked version of the frame: black out the top 15%
     # ------------------------------------------------------------------
     h, w = frame.shape[:2]
-    top_region_height = int(0.15 * h)  # 15% of frame height
+    top_region_height = int(0.1 * h)  # 10% of frame height
     masked_frame = frame.copy()
     masked_frame[:top_region_height, :] = 0  # set top region to black
 
